@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/black"
+             tools:context="mryang.funnyisland.Fragment.PhotoListFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="4dp">
+            <TextView
+                android:id="@+id/home_Recommend"
+                android:layout_width="43dp"
+                android:layout_height="22dp"
+                android:background="@drawable/shape_home_leftchoose"
+
+                android:gravity="center"
+                android:text="推荐"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/home_Collection"
+                android:layout_width="43dp"
+                android:layout_height="22dp"
+                android:background="@drawable/shape_home_right"
+                android:gravity="center"
+                android:text="收藏"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_mm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+    </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</FrameLayout>

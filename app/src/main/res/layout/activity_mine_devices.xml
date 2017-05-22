@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="mryang.funnyisland.Activity.mine.MineDevicesActivity">
+
+    <include layout="@layout/item_head"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/white"
+        android:text="没有发现设备，请检查设备是否已开机"
+        android:textSize="13sp"/>
+
+    <Button
+        android:id="@+id/mine_devices_line_Bt"
+        android:text="确定"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="200dp"
+        android:background="@drawable/shape_mine_devicesbt"
+        android:layout_marginBottom="30dp"
+        android:layout_height="40dp"/>
+
+</RelativeLayout>

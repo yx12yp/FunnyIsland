@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/bg"
+              android:orientation="vertical"
+              tools:context="mryang.funnyisland.Fragment.MineFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/personMessage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/background">
+                <RelativeLayout
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dp">
+
+                    <mryang.funnyisland.View.CircleImageView
+                        android:id="@+id/headportrait"
+                        android:layout_width="86dp"
+                        android:layout_height="86dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/touxiang"
+                        app:border_color="@color/lightgray"
+                        app:border_width="1dp"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="154dp"
+                    android:text="好大一只猪哇"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/userContext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="173dp"
+                    android:text="我是一只鱼，没有记忆"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/mine_list_Recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

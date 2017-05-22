@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.mryang.funnyisland">
+          package="mryang.funnyisland">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -9,12 +11,37 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activity.MainActivity">
+        </activity>
+        <activity android:name=".Activity.photo.PhotoDetailActivity">
+        </activity>
+        <activity android:name=".Activity.mine.PersonMessageActivity">
+        </activity>
+        <activity android:name=".Activity.mine.MineDevicesActivity">
+        </activity>
+        <activity android:name=".Activity.mine.MineLogActivity">
+        </activity>
+        <activity android:name=".Activity.mine.AboutActivity">
+        </activity>
+        <activity android:name=".Activity.mine.HelpActivity">
+        </activity>
+        <activity android:name=".Activity.product.ProductZoneActivity">
+        </activity>
+        <activity android:name=".Activity.login.SelectLoginModeActivity">
+        </activity>
+        <!-- 设置欢迎页面为主入口 -->
+        <activity android:name=".Activity.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".Activity.login.JLDLoginActivity">
+        </activity>
+        <activity android:name=".Activity.login.RegisterActivity">
+        </activity>
+        <activity android:name=".Activity.login.ForgetPwdActivity">
         </activity>
     </application>
 
