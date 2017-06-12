@@ -23,9 +23,9 @@
             android:gravity="center_vertical"
             android:orientation="horizontal">
             <ImageView
-                android:layout_width="13dp"
-                android:layout_height="20dp"
-                android:background="@mipmap/ic_launcher"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mobiel"/>
             <EditText
                 android:id="@+id/forgetpwd_phonenumber"
                 android:layout_width="match_parent"
@@ -59,9 +59,9 @@
             android:orientation="horizontal"
             android:weightSum="1">
             <ImageView
-                android:layout_width="13dp"
-                android:layout_height="20dp"
-                android:background="@mipmap/ic_launcher"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yanzhengma"/>
             <EditText
                 android:id="@+id/forgetpwd_verify_code"
                 android:layout_width="wrap_content"
@@ -108,9 +108,9 @@
             android:orientation="horizontal"
             android:weightSum="1">
             <ImageView
-                android:layout_width="13dp"
-                android:layout_height="20dp"
-                android:background="@mipmap/ic_launcher"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mimaa"/>
             <EditText
                 android:id="@+id/forgetpwd_newpwd"
                 android:layout_width="match_parent"
@@ -150,9 +150,10 @@
             android:orientation="horizontal"
             android:weightSum="1">
             <ImageView
-                android:layout_width="13dp"
-                android:layout_height="20dp"
-                android:background="@mipmap/ic_launcher"/>
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/newmima"/>
             <EditText
                 android:id="@+id/forgetpwd_confirmpwd"
                 android:layout_width="match_parent"

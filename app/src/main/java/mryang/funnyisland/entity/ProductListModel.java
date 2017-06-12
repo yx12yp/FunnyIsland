@@ -6,20 +6,20 @@ package mryang.funnyisland.entity;
 
 public class ProductListModel {
 
-    private String imgUrl;
+    private int imgs;
     private String title;
 
-    public ProductListModel(String imgUrl, String title) {
-        this.imgUrl = imgUrl;
+    public ProductListModel(int  imgs, String title) {
+        this.imgs = imgs;
         this.title = title;
     }
 
-    public String getImgUrl() {
-        return imgUrl;
+    public int getImgs() {
+        return imgs;
     }
 
-    public void setImgUrl(String imgUrl) {
-        this.imgUrl = imgUrl;
+    public void setImgs(int imgs) {
+        this.imgs = imgs;
     }
 
     public String getTitle() {

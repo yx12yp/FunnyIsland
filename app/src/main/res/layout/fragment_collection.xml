@@ -2,7 +2,7 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context="mryang.funnyisland.Fragment.CollectionFragment">
+             tools:context="mryang.funnyisland.Fragment.photo.CollectionFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

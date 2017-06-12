@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <tabs>
     <tab
-        icon="@drawable/ic_favorites"
+        icon="@drawable/meitu"
         id="@+id/tab1"
-        title="高清集"/>
+        title="美图"/>
     <tab
-        icon="@drawable/ic_nearby"
+        icon="@drawable/chanpin"
         id="@+id/tab2"
-        title="产品专区"/>
+        title="产品"/>
     <tab
-        icon="@drawable/ic_friends"
+        icon="@drawable/wode"
         id="@+id/tab3"
         title="我的"/>
 

@@ -3,17 +3,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:padding="10dp">
+                android:padding="5dp">
 
 
     <TextView
+        android:layout_marginTop="2dp"
         android:id="@+id/img_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TGOD推女神28刊"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        android:textStyle="bold"/>
+        android:text="TOD女神第三刊超级女神超清写真"
+        android:textColor="@color/phototextcolor"
+        android:textSize="16sp"/>
 
     <TextView
         android:id="@+id/img_context"
@@ -21,15 +21,18 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/img_title" android:text="超级女神超清写真超清私房照..."
-        android:textColor="@color/hui" android:textSize="12sp"/>
+        android:layout_below="@+id/img_title"
+        android:text="超级女神超清写真超清私房照..."
+        android:textColor="@color/photocontextcolor"
+        android:textSize="12sp"/>
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="17dp"
+        android:layout_height="15dp"
         android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
         android:layout_toLeftOf="@+id/zan"
-        android:src="@drawable/zuicun"/>
+        android:src="@drawable/aixin"/>
     <TextView
         android:id="@+id/zan"
         android:layout_width="wrap_content"
@@ -37,6 +40,7 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:text="998"
-        android:textColor="#f00"/>
+        android:layout_marginRight="11.5dp"
+        android:textColor="@color/photolovecolor"/>
 
 </RelativeLayout>

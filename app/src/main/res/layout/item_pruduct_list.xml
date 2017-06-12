@@ -2,35 +2,59 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
+              android:background="#232227"
               android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
+        android:layout_height="105dp"
         android:orientation="horizontal">
         <ImageView
-            android:layout_marginLeft="10dp"
             android:id="@+id/product_img"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_marginRight="30dp"
-            android:src="@mipmap/ic_launcher"/>
-
-        <TextView
-            android:id="@+id/product_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/hushi"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="角色扮演飞机杯"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/product_context"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="一款让人刺激又兴奋的设备"
+                android:textColor="#626263"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/lianjie_img"
+            android:visibility="invisible"
             android:layout_gravity="center"
-            android:text="角色扮演飞机杯"
-            android:layout_marginLeft="10dp"
-            android:textColor="@color/white"
-            android:textSize="20sp"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lianjie"/>
+
     </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="1dp"
-    android:background="@color/product_underline"/>
+        android:background="@color/product_underline"/>
 
 </LinearLayout>

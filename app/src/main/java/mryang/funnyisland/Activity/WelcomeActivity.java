@@ -42,7 +42,7 @@ public class WelcomeActivity extends AppCompatActivity {
                         startActivity(new Intent(WelcomeActivity.this, SelectLoginModeActivity.class));
                         finish();
                     }
-                }, 3000);
+                },3000);
             }
         }
     }

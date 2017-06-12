@@ -1,32 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
+    android:orientation="vertical"
     tools:context="mryang.funnyisland.Activity.mine.MineDevicesActivity">
 
     <include layout="@layout/item_head"/>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:textColor="@color/white"
-        android:text="没有发现设备，请检查设备是否已开机"
-        android:textSize="13sp"/>
+        android:layout_marginTop="34dp">
 
+        <ImageView
+            android:id="@+id/dervices_hushi"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="19dp"
+            android:background="@drawable/biankuang_red"
+            android:layout_toLeftOf="@+id/dervices_maorede"
+            android:src="@drawable/hushired"/>
+        <ImageView
+            android:id="@+id/dervices_maorede"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/biankuang_white"
+            android:layout_centerVertical="true"
+            android:src="@drawable/maorede"/>
+
+        <ImageView
+            android:id="@+id/dervices_diandeng"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:background="@drawable/biankuang_white"
+            android:layout_toRightOf="@id/dervices_maorede"
+            android:src="@drawable/diandengrede"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="22dp">
+
+        <ImageView
+            android:id="@+id/dervices_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quesion"/>
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="没有发现设备，请检查设备是否已开机"
+            android:textColor="@color/white"
+            android:textSize="13sp"/>
+    </LinearLayout>
     <Button
         android:id="@+id/mine_devices_line_Bt"
-        android:text="确定"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_width="200dp"
-        android:background="@drawable/shape_mine_devicesbt"
-        android:layout_marginBottom="30dp"
-        android:layout_height="40dp"/>
+        android:layout_width="215dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="103dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/bottomBarColor"
+        android:text="确定"/>
 
-</RelativeLayout>
+</LinearLayout>

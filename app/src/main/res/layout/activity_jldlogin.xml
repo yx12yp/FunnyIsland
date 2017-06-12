@@ -18,9 +18,9 @@
         android:gravity="center">
 
         <ImageView
-            android:src="@mipmap/ic_launcher"
-            android:layout_width="300dp"
-            android:layout_height="120dp"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bouyl"/>
 
     </LinearLayout>
 
@@ -42,15 +42,16 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
                 <ImageView
-                    android:layout_width="13dp"
-                    android:layout_height="20dp"
-                    android:background="@mipmap/ic_launcher"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shouji"/>
                 <EditText
                     android:id="@+id/login_phonenumber_editext"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:background="@null"
+                    android:textColor="@color/white"
                     android:cursorVisible="true"
                     android:hint="请输入手机号码"
                     android:inputType="number"
@@ -80,9 +81,9 @@
                 android:orientation="horizontal"
                 android:weightSum="1">
                 <ImageView
-                    android:layout_width="13dp"
-                    android:layout_height="20dp"
-                    android:background="@mipmap/ic_launcher"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mima"/>
                 <EditText
                     android:id="@+id/login_password_edittext"
                     android:layout_width="wrap_content"
@@ -91,6 +92,7 @@
                     android:layout_weight="0.98"
                     android:background="@null"
                     android:cursorVisible="true"
+                    android:textColor="@color/white"
                     android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
                     android:hint="请输入密码"
                     android:inputType="numberPassword"
@@ -100,9 +102,9 @@
                     android:textSize="14sp"/>
                 <ImageView
                     android:id="@+id/look_pwd"
-                    android:src="@mipmap/ic_launcher"
-                    android:layout_width="18dp"
-                    android:layout_height="18dp"/>
+                    android:src="@drawable/yanjing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
@@ -116,7 +118,7 @@
             android:layout_height="44dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="29dp"
             android:background="@color/bottomBarColor"
             android:text="登录"
             android:textColor="@color/white"
@@ -134,7 +136,7 @@
                 android:layout_weight="1"
                 android:text="找回密码"
                 android:textColor="@color/white"
-                android:textSize="14sp"/>
+                android:textSize="12sp"/>
 
             <TextView
                 android:id="@+id/login_register_now"
@@ -146,7 +148,7 @@
                 android:layout_weight="1"
                 android:text="注册账户"
                 android:textColor="@color/white"
-                android:textSize="14sp"/>
+                android:textSize="12sp"/>
         </RelativeLayout>
     </LinearLayout>
 

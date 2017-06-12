@@ -15,9 +15,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import mryang.funnyisland.Activity.product.ProductZoneActivity;
-import mryang.funnyisland.Fragment.MineFragment;
-import mryang.funnyisland.Fragment.PhotoListFragment;
-import mryang.funnyisland.Fragment.ProductZoneFragment;
+import mryang.funnyisland.Fragment.mine.MineFragment;
+import mryang.funnyisland.Fragment.photo.PhotoListFragment;
+import mryang.funnyisland.Fragment.product.ProductZoneFragment;
 import mryang.funnyisland.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -50,9 +50,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void initFragment() {
 
-        PhotoListFragment f1 = new PhotoListFragment();
-        ProductZoneFragment f2 = new ProductZoneFragment();
-        MineFragment f3 = new MineFragment();
+        PhotoListFragment f1 = new PhotoListFragment();//美图页面
+        ProductZoneFragment f2 = new ProductZoneFragment();//产品页面
+        MineFragment f3 = new MineFragment();//我的页面
         fragmentlist.add(f1);
         fragmentlist.add(f2);
         fragmentlist.add(f3);

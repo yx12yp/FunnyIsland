@@ -48,7 +48,6 @@ public class ForgetPwdActivity extends AppCompatActivity implements View.OnClick
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.forgetpaw_sendVerifycode_bt://发送验证码
-
                 break;
             case R.id.forgetpwd_submit_bt://提交
                 finish();

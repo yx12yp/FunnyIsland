@@ -28,6 +28,7 @@ public class ProductListRecyclerViewAdapter extends RecyclerView.Adapter<Product
 
     private List<ProductListModel> mData = new ArrayList<>();
     private Context mContext;
+    private int LINE_SUCCESS = 0;
 
     public interface OnItemClickListener {
         void onItemClick(View view, int position);
@@ -54,7 +55,9 @@ public class ProductListRecyclerViewAdapter extends RecyclerView.Adapter<Product
     @Override
     public void onBindViewHolder(final VH holder, final int position) {
         holder.mProductName.setText(mData.get(position).getTitle());
-        Glide.with(mContext).load(mData.get(position).getImgUrl()).asBitmap().diskCacheStrategy(DiskCacheStrategy.ALL)
+        //连接蓝牙成功，显示连接图标
+        holder.mLianjie.setVisibility(position == LINE_SUCCESS ? View.VISIBLE : View.GONE);
+        Glide.with(mContext).load(mData.get(position).getImgs()).asBitmap().diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(new SimpleTarget<Bitmap>() {
                     @Override
                     public void onResourceReady(Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
@@ -87,11 +90,13 @@ public class ProductListRecyclerViewAdapter extends RecyclerView.Adapter<Product
 
         private final ImageView mProductImg;
         private final TextView mProductName;
+        private final ImageView mLianjie;
 
         public VH(View itemView) {
             super(itemView);
             mProductImg = (ImageView) itemView.findViewById(R.id.product_img);
             mProductName = (TextView) itemView.findViewById(R.id.product_name);
+            mLianjie = (ImageView) itemView.findViewById(R.id.lianjie_img);
         }
     }
 }

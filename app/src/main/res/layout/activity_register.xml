@@ -23,9 +23,9 @@
             android:gravity="center_vertical"
             android:orientation="horizontal">
             <ImageView
-                android:layout_width="13dp"
-                android:layout_height="20dp"
-                android:background="@mipmap/ic_launcher"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mobiel"/>
             <EditText
                 android:id="@+id/register_phoneNumber"
                 android:layout_width="match_parent"
@@ -59,9 +59,9 @@
             android:weightSum="1"
             android:orientation="horizontal">
             <ImageView
-                android:layout_width="13dp"
-                android:layout_height="20dp"
-                android:background="@mipmap/ic_launcher"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mimaa"/>
             <EditText
                 android:id="@+id/register_password"
                 android:layout_width="match_parent"
@@ -82,9 +82,9 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/look_pwdimg"
-                    android:src="@mipmap/ic_launcher"
-                    android:layout_width="18dp"
-                    android:layout_height="10dp"
+                    android:src="@drawable/yanjinghui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="2dp"
                     android:layout_marginBottom="5dp"
@@ -113,9 +113,9 @@
             android:orientation="horizontal"
             android:weightSum="1">
             <ImageView
-                android:layout_width="13dp"
-                android:layout_height="20dp"
-                android:background="@mipmap/ic_launcher"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yanzhengma"/>
             <EditText
                 android:id="@+id/register_verification_code"
                 android:layout_width="wrap_content"

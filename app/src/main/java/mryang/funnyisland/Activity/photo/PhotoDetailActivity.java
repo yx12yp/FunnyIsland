@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import mryang.funnyisland.Adapter.PhotoDetailAdapter;
+import mryang.funnyisland.Adapter.PhotoRecommendAdapter;
 import mryang.funnyisland.R;
 import mryang.funnyisland.entity.ImgsModel;
 
@@ -39,13 +40,23 @@ public class PhotoDetailActivity extends AppCompatActivity {
     private void initView() {
         mPhotoDetailRecyclerview = (RecyclerView) findViewById(R.id.photoDetailRecyclerview);
         mRecommendPhotoListRecyclerview = (RecyclerView) findViewById(R.id.recommendPhotoListRecyclerview);
-        mPhotoDetailRecyclerview.setLayoutManager(new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL){
+        mPhotoDetailRecyclerview.setLayoutManager(new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL) {
             @Override
             public boolean canScrollVertically() {
                 return false;
             }
         });
         mPhotoDetailRecyclerview.setAdapter(new PhotoDetailAdapter(this, data));
+
+        //推荐图集列表
+        mRecommendPhotoListRecyclerview.setLayoutManager(new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL){
+            @Override
+            public boolean canScrollVertically() {
+                return false;
+            }
+        });
+        mRecommendPhotoListRecyclerview.setAdapter(new PhotoRecommendAdapter(this,data));
+
     }
 
     private void initData() {

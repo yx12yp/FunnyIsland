@@ -43,6 +43,12 @@
         </activity>
         <activity android:name=".Activity.login.ForgetPwdActivity">
         </activity>
+        <activity android:name=".Activity.product.ProductBallActivity">
+        </activity>
+        <activity android:name=".Activity.product.ProductFlyActivicty">
+        </activity>
+        <activity android:name=".Activity.product.ProductListActivity">
+        </activity>
     </application>
 
 </manifest>

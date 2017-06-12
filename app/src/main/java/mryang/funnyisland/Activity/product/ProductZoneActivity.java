@@ -49,8 +49,6 @@ public class ProductZoneActivity extends AppCompatActivity implements View.OnCli
     }
 
     //返回键监听
-
-
     @Override
     public boolean dispatchKeyEvent(KeyEvent event) {
         if (event.getKeyCode() == KeyEvent.KEYCODE_BACK) {
